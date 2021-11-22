@@ -15,14 +15,17 @@ You can inference and training your own model.
 ```
 * Make your train and valid Dataset as `Data/train.txt` and `Data/valid.txt`
 * Modify label name in `Data/classes.txt`
-ex:
+
+** Example **
+
+|line|label|
+|:-:|:-:|
 | 0 |cat|
-|:-:|:-:|
 | 1 |dog|
-|:-:|:-:|
 | 2 |pig|
-|:-:|:-:|
 | X |...|
+
+* `python train.py`
 
 ## Testing custom model
 See `detect.py`
