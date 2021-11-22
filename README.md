@@ -3,6 +3,7 @@
 ## Training custom model
 
 This is a repo for yolov4 using tensorflow2.x
+
 You can inference and training your own model.
 
 ### Steps
@@ -14,6 +15,10 @@ You can inference and training your own model.
   wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
 ```
 * Make your train and valid Dataset as `Data/train.txt` and `Data/valid.txt`
+
+__Format:__
+path/xxx.jpg left_top_x , left_top_y , right_bottom_x , right_bottom_y ,label ,left_top_x ......
+
 * Modify label name in `Data/classes.txt`
 
 __classes.txt Example__
