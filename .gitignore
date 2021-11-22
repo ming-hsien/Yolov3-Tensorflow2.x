@@ -4,4 +4,4 @@ Data/public_training_data.csv
 checkpoints/
 .DS_Store
 */.DS_Store
-Model/yolov3.weights
+Model/yolov4.weights

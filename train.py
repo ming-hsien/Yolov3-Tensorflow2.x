@@ -3,15 +3,15 @@ import shutil
 import numpy as np
 import tensorflow as tf
 
-from yolov3.dataset import Dataset
-from yolov3.yolov3 import Create_Yolo, compute_loss
-from yolov3.utils import load_yolo_weights
-from yolov3.configs import *
+from yolov4.dataset import Dataset
+from yolov4.yolov4 import Create_Yolo, compute_loss
+from yolov4.utils import load_yolo_weights
+from yolov4.configs import *
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
     
-Darknet_weights = YOLO_V3_WEIGHTS
+Darknet_weights = YOLO_V4_WEIGHTS
 
 def main():
     global TRAIN_FROM_CHECKPOINT
@@ -103,7 +103,7 @@ def main():
 
     best_val_loss = 1000 # should be large at start
     for epoch in range(TRAIN_EPOCHS):
-        cur_step = 0
+        cur_step = 1
         for image_data, target in trainset:
             results = train_step(image_data, target)
             print("epoch:{:2.0f} step:{:5.0f}/{}, lr:{:.6f}, giou_loss:{:7.2f}, conf_loss:{:7.2f}, prob_loss:{:7.2f}, total_loss:{:7.2f}"

@@ -5,15 +5,15 @@ import random
 import colorsys
 import numpy as np
 import tensorflow as tf
-from yolov3.configs import *
-from yolov3.yolov3 import *
+from yolov4.configs import *
+from yolov4.yolov4 import *
 from tensorflow.python.saved_model import tag_constants
 
 def load_yolo_weights(model, weights_file):
     tf.keras.backend.clear_session() # used to reset layer names
     # load Darknet original weights to TensorFlow model
-    range1 = 75
-    range2 = [58, 66, 74]
+    range1 = 110
+    range2 = [93, 101, 109]
     
     with open(weights_file, 'rb') as wf:
         major, minor, revision, seen, _ = np.fromfile(wf, dtype=np.int32, count=5)
@@ -66,7 +66,7 @@ def Load_Yolo_model():
         try: tf.config.experimental.set_memory_growth(gpus[0], True)
         except RuntimeError: pass
         
-    Darknet_weights = YOLO_V3_WEIGHTS
+    Darknet_weights = YOLO_V4_WEIGHTS
         
     if YOLO_CUSTOM_WEIGHTS == False:
         print("Loading Darknet_weights from:", Darknet_weights)

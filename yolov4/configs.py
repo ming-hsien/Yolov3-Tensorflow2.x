@@ -1,8 +1,8 @@
-# Yolov3 training
-YOLO_TYPE                   = "yolov3"
+# Yolov4 training
+YOLO_TYPE                   = "yolov4"
 
 # Set train parameters 
-YOLO_V3_WEIGHTS             = "Model/yolov3.weights"
+YOLO_V4_WEIGHTS             = "Model/yolov4.weights"
 TRAIN_CLASSES               = "Data/classes.txt"
 TRAIN_ANNOT_PATH            = "Data/train.txt"
 YOLO_COCO_CLASSES           = "Model/coco/coco.names" # Don't change this
@@ -18,7 +18,7 @@ TEST_SCORE_THRESHOLD        = 0.3
 TEST_IOU_THRESHOLD          = 0.45
 
 SAVE_CHECKPOINTS_FOLDER    = "checkpoints/"
-SAVE_MODEL_NAME            = "yolov3_custom"
+SAVE_MODEL_NAME            = "yolov4_custom"
 
 
 TRAIN_BATCH_SIZE            = 16
@@ -27,7 +27,7 @@ TRAIN_DATA_AUG              = True
 TRAIN_TRANSFER              = True
 TRAIN_FROM_CHECKPOINT       = False
 if TRAIN_FROM_CHECKPOINT:
-  CHECKPOINT_PATH = 'checkpoints/yolov3_custom'
+  CHECKPOINT_PATH = 'checkpoints/yolov4_custom'
 TRAIN_LR_INIT               = 1e-4
 TRAIN_LR_END                = 1e-6
 TRAIN_WARMUP_EPOCHS         = 2
@@ -43,8 +43,8 @@ YOLO_IOU_LOSS_THRESH        = 0.5
 YOLO_ANCHOR_PER_SCALE       = 3
 YOLO_MAX_BBOX_PER_SCALE     = 100
 YOLO_INPUT_SIZE             = 416
-YOLO_ANCHORS                = [[[10,  13], [16,   30], [33,   23]],
-                              [[30,  61], [62,   45], [59,  119]],
-                              [[116, 90], [156, 198], [373, 326]]]
+YOLO_ANCHORS                = [[[12,  16], [19,   36], [40,   28]],
+                               [[36,  75], [76,   55], [72,  146]],
+                               [[142,110], [192, 243], [459, 401]]]
 
 
