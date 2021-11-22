@@ -17,7 +17,7 @@ You can inference and training your own model.
 * Make your train and valid Dataset as `Data/train.txt` and `Data/valid.txt`
 
 __Format:__
-path/xxx.jpg left_top_x , left_top_y , right_bottom_x , right_bottom_y ,label ,left_top_x ......
+      path/xxx.jpg left_top_x , left_top_y , right_bottom_x , right_bottom_y ,label ,left_top_x ......
 
 * Modify label name in `Data/classes.txt`
 
