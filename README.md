@@ -17,8 +17,10 @@ You can inference and training your own model.
 * Modify label name in `Data/classes.txt`
 ex:
 | cat |
+|-----|
 | dog |
 | pig |
 | ... |
 
 ## Testing custom model
+See `detect.py`
