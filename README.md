@@ -16,7 +16,7 @@ You can inference and training your own model.
 * Make your train and valid Dataset as `Data/train.txt` and `Data/valid.txt`
 * Modify label name in `Data/classes.txt`
 
-** Example **
+__Example__
 
 |line|label|
 |:-:|:-:|
