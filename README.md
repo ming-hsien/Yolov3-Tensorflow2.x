@@ -16,11 +16,13 @@ You can inference and training your own model.
 * Make your train and valid Dataset as `Data/train.txt` and `Data/valid.txt`
 * Modify label name in `Data/classes.txt`
 ex:
-| cat |
-|-----|
-| dog |
-| pig |
-| ... |
+| 0 |cat|
+|:-:|:-:|
+| 1 |dog|
+|:-:|:-:|
+| 2 |pig|
+|:-:|:-:|
+| X |...|
 
 ## Testing custom model
 See `detect.py`
