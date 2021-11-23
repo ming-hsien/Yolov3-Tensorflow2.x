@@ -1,10 +1,11 @@
 # Yolov4-Tensorflow2.x
 
-## Training custom model
-
 This is a repo for yolov4 using tensorflow2.x
 
 You can inference and training your own model.
+
+## Training custom model
+
 
 ### Steps
 * `git clone https://github.com/ming-hsien/Yolov4-Tensorflow2.x.git`
