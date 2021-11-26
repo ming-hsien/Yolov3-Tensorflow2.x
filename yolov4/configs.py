@@ -6,7 +6,7 @@ YOLO_V4_WEIGHTS             = "Model/yolov4.weights"
 TRAIN_CLASSES               = "Data/classes.txt"
 TRAIN_ANNOT_PATH            = "Data/train.txt"
 YOLO_COCO_CLASSES           = "Model/coco/coco.names" # Don't change this
-YOLO_CUSTOM_WEIGHTS         = True
+YOLO_CUSTOM_WEIGHTS         = False
 
 # Set Validate parameters
 TEST_ANNOT_PATH             = "./Data/valid.txt"

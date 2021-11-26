@@ -1,1 +1,3 @@
-obj
+nogood
+withoutmask
+Havemask
